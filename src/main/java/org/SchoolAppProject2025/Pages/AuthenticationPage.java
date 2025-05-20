@@ -1,4 +1,26 @@
 package org.SchoolAppProject2025.Pages;
 
-public class AuthenticationPage {
+import org.SchoolAppProject2025.Mappings.AuthenticationMappings;
+import org.openqa.selenium.WebDriver;
+
+public class AuthenticationPage extends AuthenticationMappings {
+    AuthenticationPage mappings;
+    WebDriver driver;
+
+    public AuthenticationPage(WebDriver driver) {
+
+        super(driver);
+        this.driver = driver;
+    }
+
+    public void inputUserName(String testuser){
+        username.sendKeys(testuser);
+    }
+
+    public  void inputPassword(String testpassword){
+        password.sendKeys(testpassword);
+    }
+    public void clickSubmitButton(){
+        submit.click();
+    }
 }
