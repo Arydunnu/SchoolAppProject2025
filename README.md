@@ -7,5 +7,5 @@ This repository contains Web UI automation test scripts for a School Management 
 ## 📁 Project Structure
 
 school-app-automation/
-├── ui-tests/ # Web UI tests using TestNG + Selenium
-└── testng.xml # TestNG suite configuration (optional)
+UI Tests # Web UI tests using TestNG + Selenium
+TestNG.xml # TestNG suite configuration (optional)
