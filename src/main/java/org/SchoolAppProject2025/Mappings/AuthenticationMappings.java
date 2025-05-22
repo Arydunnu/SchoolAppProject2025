@@ -21,11 +21,25 @@ public class AuthenticationMappings {
     @FindBy(css = "body > section > div > div > div.col-md-4.login-sec > form > button")
     public WebElement submit;
 
-    @FindBy(css = "#menu-logout > a > p")
-    public WebElement LogoutButton;
-
-    @FindBy (id = "students-card")
-    public WebElement StudentMenu;
+//    @FindBy(css = "#menu-logout > a > p")
+//    public WebElement LogoutButton;
 
 
+
+    @FindBy(name="first_name")
+    public WebElement FirstNameField;
+
+
+
+    @FindBy (xpath = "//*[@id=\"students-card\"]/div[2]/table/tbody/tr[1]/td[7]/button/i")
+    public WebElement EditButton;
+
+    @FindBy(id="menu-teachers")
+    public WebElement TeachersMenu;
+
+    @FindBy(id="menu-subjects")
+    public WebElement SubjectsMenu;
+
+    @FindBy(id = "menu-logout")
+    public WebElement LogoutMenu;
 }
