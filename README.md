@@ -8,4 +8,3 @@ This repository contains Web UI automation test scripts for a School Management 
 
 school-app-automation/
 UI Tests # Web UI tests using TestNG + Selenium
-TestNG.xml # TestNG suite configuration (optional)
