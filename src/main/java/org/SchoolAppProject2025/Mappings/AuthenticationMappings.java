@@ -26,14 +26,6 @@ public class AuthenticationMappings {
 
 
 
-    @FindBy(name="first_name")
-    public WebElement FirstNameField;
-
-
-
-    @FindBy (xpath = "//*[@id=\"students-card\"]/div[2]/table/tbody/tr[1]/td[7]/button/i")
-    public WebElement EditButton;
-
     @FindBy(id="menu-teachers")
     public WebElement TeachersMenu;
 

@@ -16,17 +16,33 @@ public class RecordNamesPage extends RecordNamesMappings {
             this.driver = driver;
             PageFactory.initElements(driver,this);
         }
-//
-////        public void inputFirstName(String testuser){
-////            inputFirstName.sendKeys(testuser);
-////        }
-////
-////        public  void inputPassword(String testpassword){
-////            password.sendKeys(testpassword);
-////        }
         public void clickStudentMenuButton(){
-
             StudentMenu.click();
         }
+
+    public void clickAddStudentButton(){
+
+        AddStudentButton.click();
+    }
+
+    public void InputFirstName(String Aridunnu){
+        firstNameTextField.sendKeys("Aridunnu");
+    }
+    public void InputLastName(String Ari){
+        lastNameTextField.sendKeys(Ari);
+    }
+
+    public void inputEmailAddress(String ariaridunnu){
+        emailTextField.sendKeys("ariaridunnu@gmail.com");
+    }
+
+    public void clickAddStudentModalButton(){
+            AddStudentModalSubmitButton.click();
+    }
+
+    public void clickCloseButton(){
+            CloseButton.click();
+    }
+
     }
 

@@ -30,7 +30,7 @@ public class AuthenticationPage extends AuthenticationMappings {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    public void clickLogoutButton(){
+    public void clickLogoutMenu(){
 
         LogoutMenu.click();
     }

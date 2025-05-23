@@ -16,7 +16,7 @@ public class SchoolAppLogoutTest extends TestBase{
         authenticationPage.inputUserName("testuser");
         authenticationPage.inputPassword("testpassword");
         authenticationPage.clickSubmitButton();
-        authenticationPage.clickLogoutButton();
+        authenticationPage.clickLogoutMenu();
 
     }
 
