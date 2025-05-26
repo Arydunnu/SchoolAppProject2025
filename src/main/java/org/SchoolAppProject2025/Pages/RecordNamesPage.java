@@ -40,9 +40,15 @@ public class RecordNamesPage extends RecordNamesMappings {
             AddStudentModalSubmitButton.click();
     }
 
+    public String getStudentSuccessMessage() {
+        return StudentSuccessMessage.getText();
+        }
+
     public void clickCloseButton(){
             CloseButton.click();
-    }
+        }
+
+
 
     }
 

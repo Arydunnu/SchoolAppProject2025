@@ -15,7 +15,7 @@ import java.util.Map;
 public class TestBase {
     protected static WebDriver driver;
 
-    @BeforeMethod
+
     public static WebDriver setUp() {
         // Set up your WebDriver here (Using Chrome )
 //        System.setProperty("webdriver.chrome.driver", "C:/Users/Aridunnu/Documents/School App Project/src/main/Drivers/chromedriver.exe");

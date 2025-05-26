@@ -6,6 +6,7 @@ import org.SchoolAppProject2025.Pages.TestBase;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
+import static org.testng.AssertJUnit.assertEquals;
 
 
 public class SchoolAppStudentMenu extends TestBase{
@@ -27,6 +28,8 @@ public class SchoolAppStudentMenu extends TestBase{
         recordNamesPage.inputEmailAddress("ariaridunnu@gmail.com");
         recordNamesPage.clickAddStudentModalButton();
         recordNamesPage.clickStudentMenuButton();
+//        assertEquals(recordNamesPage.getStudentSuccessMessage(), "YOU HAVE SUCCESSFULLY CREATED A NEW STUDENT";
+
         recordNamesPage.clickCloseButton();
 
 //        recordNamesPage.clickEditButton();

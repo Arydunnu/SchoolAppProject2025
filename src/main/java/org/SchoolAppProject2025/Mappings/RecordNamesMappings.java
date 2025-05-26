@@ -33,10 +33,14 @@ public RecordNamesMappings (WebDriver driver) {
     public WebElement AddStudentModalSubmitButton;
 
     @FindBy (css = "body > div.wrapper > div.main-panel > div > div.alert.alert-success.alert-with-icon > span > b")
-    public WebElement AddStudentSuccessMessage;
+    public WebElement StudentSuccessMessage;
+//    body > div.wrapper > div.main-panel > div > div.alert.alert-success.alert-with-icon > span
+//    body > div.wrapper > div.main-panel > div > div.alert.alert-success.alert-with-icon > span > b
 
     @FindBy(css = "body > div.wrapper > div.main-panel > div > div.alert.alert-success.alert-with-icon > button")
     public WebElement CloseButton;
+
+
 
     @FindBy (xpath = "//*[@id=\"students-card\"]/div[2]/table/tbody/tr[1]/td[7]/button/i")
     public WebElement EditButton;
