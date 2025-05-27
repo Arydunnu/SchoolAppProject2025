@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="School App Project">
+    <test name="SchoolApp Login Test">
+        <classes>
+            <class name="org.SchoolAppProject2025.SchoolAppLoginTest"/>
+            <class name="org.SchoolAppProject2025.SchoolAppStudentMenu"/>
+            <class name="org.SchoolAppProject2025.SchoolAppTeacherMenu"/>
+            <class name="org.SchoolAppProject2025.SchoolAppLogoutTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="org.SchoolAppProject2025.SchoolAppLogoutTest">
+        <parameter name="emailid" value="tester789@gmail.com"/>
+        <classes>
+        </classes>
+
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

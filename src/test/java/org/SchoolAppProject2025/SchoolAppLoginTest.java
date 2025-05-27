@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class SchoolAppLoginTest extends TestBase{
 
     WebDriver driver;
-
+    @Test
     public void testLogin(){
         driver = TestBase.setUp();
 

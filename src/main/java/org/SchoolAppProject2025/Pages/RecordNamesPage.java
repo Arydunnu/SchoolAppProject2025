@@ -29,7 +29,7 @@ public class RecordNamesPage extends RecordNamesMappings {
         firstNameTextField.sendKeys("Aridunnu");
     }
     public void InputLastName(String Ari){
-        lastNameTextField.sendKeys(Ari);
+        lastNameTextField.sendKeys("Ari");
     }
 
     public void inputEmailAddress(String ariaridunnu){
@@ -48,7 +48,30 @@ public class RecordNamesPage extends RecordNamesMappings {
             CloseButton.click();
         }
 
-
-
+    public void clickTeachersMenuButton(){
+        TeachersMenuButton.click();
     }
+
+        public void clickAddTeacherButton(){
+            addTeacherButton.click();
+        }
+
+
+    public void inputFirstName(String Dorcas){
+            firstNameField.sendKeys("Dorcas");
+    }
+    public void inputLastName(String Ari){
+
+            lastNameField.sendKeys("Ari");
+    }
+    public void inputEmailTextTeachersField(String dorcasari){
+        emailTextTeachersField.sendKeys("dorcasari@gmail.com");
+    }
+    public void clickAddTeacherModalSubmitButton(){
+
+            AddTeacherModalSubmitButton.click();
+    }
+
+
+}
 

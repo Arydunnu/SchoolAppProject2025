@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class SchoolAppLogoutTest extends TestBase{
 
     WebDriver driver;
+    @Test
     public void testLogout() {
         driver = TestBase.setUp();
 

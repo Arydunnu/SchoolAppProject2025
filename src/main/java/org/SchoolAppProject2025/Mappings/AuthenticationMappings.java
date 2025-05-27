@@ -26,9 +26,6 @@ public class AuthenticationMappings {
 
 
 
-    @FindBy(id="menu-teachers")
-    public WebElement TeachersMenu;
-
     @FindBy(id="menu-subjects")
     public WebElement SubjectsMenu;
 

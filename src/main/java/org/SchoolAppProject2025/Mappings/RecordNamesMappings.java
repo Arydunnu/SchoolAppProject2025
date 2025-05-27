@@ -15,7 +15,7 @@ public RecordNamesMappings (WebDriver driver) {
     this.driver = driver;
 }
 
-    @FindBy(id = "menu-students")
+    @FindBy(css = "#menu-students > a > p")
     public WebElement StudentMenu;
 
     @FindBy(css = "#students-card > div.card-content.table-responsive > button")
@@ -34,8 +34,7 @@ public RecordNamesMappings (WebDriver driver) {
 
     @FindBy (css = "body > div.wrapper > div.main-panel > div > div.alert.alert-success.alert-with-icon > span > b")
     public WebElement StudentSuccessMessage;
-//    body > div.wrapper > div.main-panel > div > div.alert.alert-success.alert-with-icon > span
-//    body > div.wrapper > div.main-panel > div > div.alert.alert-success.alert-with-icon > span > b
+
 
     @FindBy(css = "body > div.wrapper > div.main-panel > div > div.alert.alert-success.alert-with-icon > button")
     public WebElement CloseButton;
@@ -46,8 +45,27 @@ public RecordNamesMappings (WebDriver driver) {
     public WebElement EditButton;
 
 
-    @FindBy(id = "menu-teachers")
-    public WebElement teachersMenu;
+    @FindBy(css = "#menu-teachers > a > p")
+    public WebElement TeachersMenuButton;
+
+    @FindBy(css = "#teachers-card > div.card-content.table-responsive > button")
+    public WebElement addTeacherButton;
+
+
+    @FindBy(css = "#add-teacher-modal > div > div > div.modal-body > form > div:nth-child(1) > div:nth-child(1) > div > input")
+    public WebElement firstNameField;
+
+
+    @FindBy(css = "#add-teacher-modal > div > div > div.modal-body > form > div:nth-child(1) > div:nth-child(2) > div > input")
+    public WebElement lastNameField;
+    @FindBy(css = "#add-teacher-modal > div > div > div.modal-body > form > div:nth-child(2) > div:nth-child(1) > div > input")
+    public WebElement emailTextTeachersField;
+    @FindBy (css = "#add-teacher-modal > div > div > div.modal-body > form > button")
+    public WebElement AddTeacherModalSubmitButton;
+
+
+
+
 
     @FindBy(id = "menu-subjects")
     public WebElement subjectsMenu;
