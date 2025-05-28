@@ -5,9 +5,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
+//import org.testng.annotations.AfterMethod;
+//import org.testng.annotations.AfterTest;
+//import org.testng.annotations.BeforeMethod;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,17 +31,17 @@ public class TestBase {
 
     }
 
-    @AfterTest
-    public void disableChrome() {
-        ChromeOptions options = new ChromeOptions();
-
-        // Disable Chrome password manager popup
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("credentials_enable_service", false);
-        prefs.put("profile.password_manager_enabled", false);
-        options.setExperimentalOption("prefs", prefs);
-
-    }
+//    @AfterTest
+//    public void disableChrome() {
+//        ChromeOptions options = new ChromeOptions();
+//
+//        // Disable Chrome password manager popup
+//        Map<String, Object> prefs = new HashMap<>();
+//        prefs.put("credentials_enable_service", false);
+//        prefs.put("profile.password_manager_enabled", false);
+//        options.setExperimentalOption("prefs", prefs);
+//
+//    }
 
 
 
